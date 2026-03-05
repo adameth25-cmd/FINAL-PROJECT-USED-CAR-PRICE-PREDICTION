@@ -228,5 +228,5 @@ Machine Learning Model Development and Deployment
 
 GitHub Repository Link:
 
-([Add your GitHub repo link here](https://github.com/adameth25-cmd/FINAL-PROJECT-USED-CAR-PRICE-PREDICTION.git))
+([Here is my repo link](https://github.com/adameth25-cmd/FINAL-PROJECT-USED-CAR-PRICE-PREDICTION.git))
 

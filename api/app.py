@@ -20,8 +20,17 @@ model = joblib.load("models/best_model.pkl")
 def home():
     return {"message": "Used Car Price Prediction API"}
 
+    return {"predicted_price": float(prediction[0])}
+
 @app.post("/predict")
 def predict(data: dict):
-    df = pd.DataFrame([data])
-    prediction = model.predict(df)
-    return {"predicted_price": float(prediction[0])}
+
+    try:
+        df = pd.DataFrame([data])
+        prediction = model.predict(df)
+
+        return {"predicted_price": float(prediction[0])}
+
+    except Exception as e:
+        print("Prediction error:", e)
+        return {"predicted_price": 0}

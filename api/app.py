@@ -20,7 +20,6 @@ model = joblib.load("models/best_model.pkl")
 def home():
     return {"message": "Used Car Price Prediction API"}
 
-    return {"predicted_price": float(prediction[0])}
 
 @app.post("/predict")
 def predict(data: dict):
